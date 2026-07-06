@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC Service Center, Patharghata - Master Dashboard</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>CSC Service Center, Patharghata - Master Dashboard & Citizen Portal</title>
+    <meta name="description" content="Official CSC Service Center Patharghata Digital Dashboard. Access public services, PAN, Land records, Ration card, Voter card, Scholarships, and daily Karmasangsthan paper.">
+    <meta name="keywords" content="CSC Service Center Patharghata, Common Service Center, Patharghata Master Dashboard, Digital Citizen Window, West Bengal government schemes, Karmasangsthan paper, PAN Aadhaar link, Banglarbhumi, Ration card online">
+    <meta name="author" content="Sanjib Roy">
+    
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CSC Service Center, Patharghata - Master Dashboard">
+    <meta property="og:description" content="Your one-stop digital window for public schemes, government services, and daily newspaper tracking at Patharghata.">
+    
     <link rel="stylesheet" href="./assets/css/csc-center.css">
+
+    <!-- Custom CSS Style to Visual Highlight Annapurna Yojana Cards -->
+    <style>
+        .highlight-annapurna {
+            border: 2px solid #ff9900 !important;
+            background-color: #fff9f0 !important;
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.15) !important;
+            position: relative;
+        }
+        .highlight-annapurna::before {
+            content: "⭐ FEATURED SCHEME";
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: #ff9900;
+            color: #fff;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 10px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+
+    <!-- Google Search Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GovernmentOffice",
+      "name": "CSC Service Center, Patharghata",
+      "description": "Patharghata Master Digital Dashboard & Citizen Window / পাথরঘাটা নাগরিক সুবিধা কেন্দ্র",
+      "url": "https://yourdomain.com",
+      "provider": {
+        "@type": "Person",
+        "name": "Sanjib Roy"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patharghata",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -27,13 +82,13 @@
             <p>Patharghata Master Digital Dashboard & Citizen Window / পাথরঘাটা নাগরিক সুবিধা কেন্দ্র</p>
             <div class="hero-actions">
                 <a href="#services" class="btn btn-outline">Explore Services</a>
-                <a href="https://drive.google.com/file/d/1M_ZTvaSruY29VKMjQw8VXCWnVCgYpcfH/preview" target="_blank" class="btn">Open Daily Paper</a>
+                <a href="https://drive.google.com/file/d/1FyrR1FCrdGvOhBDRvTC2ElYkatdYUPrf/preview" target="_blank" class="btn">Open Daily Paper</a>
             </div>
         </div>
-        <div class="hero-panel">
+        <div class="hero-panel" id="updates">
             <div class="panel-card">
                 <span class="badge bg-news">Daily Paper</span>
-                <h3>কার্মসংস্থান পেপার <span>Karmasangsthan Official Paper</span></h3>
+                <h3>কর্মসংস্থান পেপার <span>Karmasangsthan Official Paper</span></h3>
                 <p>Stay updated with official public notices, local updates, and daily news from the trusted source.</p>
                 <a href="https://drive.google.com/file/d/1M_ZTvaSruY29VKMjQw8VXCWnVCgYpcfH/preview" target="_blank" class="btn">আজকের পেপার খুলুন / Open Today</a>
             </div>
@@ -61,7 +116,6 @@
     <div class="quick-menu-inner">
         <h4>⚡ দ্রুত লিঙ্ক নেভিগেশন / Quick Service & Scheme Finder</h4>
         <div class="quick-links-grid">
-            <a href="#updates" class="quick-btn">📰 দৈনিক পেপার</a>
             <a href="#pan-tax" class="quick-btn">💳 প্যান ও ট্যাক্স</a>
             <a href="#land-property" class="quick-btn">🏡 ভূমি ও প্রপার্টি</a>
             <a href="#ration-food" class="quick-btn">🌾 রেশন ও খাদ্য</a>
@@ -126,11 +180,11 @@
             <div class="card">
                 <div>
                     <span class="badge bg-land">Land Dept</span>
-                    <h3>বাংলারভূমি ড্যাশবোর্ড <span>Banglarbhumi Main Dashboard</span></h3>
+                    <h3>বাংলারभूमि ড্যাশবোর্ড <span>Banglarbhumi Main Dashboard</span></h3>
                     <p>জমির মিউটেশন, নতুন দলিলের রেকর্ড ভেরিফিকেশন ও অনলাইন অ্যাপ্লিকেশনের প্রধান ড্যাশবোর্ড।</p>
                     <div class="info-box">
                         <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
-                        রেজিস্টার্ড দলিল কপি, পিআই রসিদ এবং আবেদনকারীর আইডি প্রুফ।
+                        রেজিস্টার্ড দলিল কপি, পিআই রসিদ এবং আবেদনকারীর আইডি প্রুф।
                     </div>
                 </div>
                 <a href="https://banglarbhumi.gov.in/BanglarBhumi/Home.action#" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
@@ -180,6 +234,18 @@
             </div>
             <div class="card">
                 <div>
+                    <span class="badge bg-food">NPCI Hub</span>
+                    <h3>ব্যাংক অ্যাকাউন্ট ডিবিটি লিঙ্ক <span>NPCI Aadhaar DBT Status Enable (BASE)</span></h3>
+                    <p>সরকারি প্রকল্পের টাকা (লক্ষ্মীর ভান্ডার, পিএম কিষান ইত্যাদি) সরাসরি ব্যাংকে পাওয়ার জন্য আধার ম্যাপিং ও ডিবিটি সক্রিয় করুন।</p>
+                    <div class="info-box">
+                        <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
+                        আধার কার্ড নম্বর, লিঙ্কড মোবাইল নম্বর এবং ব্যাংকের নাম।
+                    </div>
+                </div>
+                <a href="https://www.npci.org.in/" target="_blank" class="btn">ডিবিটি লিঙ্ক / Apply Now</a>
+            </div>
+            <div class="card">
+                <div>
                     <span class="badge bg-food">Correction</span>
                     <h3>রেশন কার্ড সংশোধন <span>Ration Card Modification</span></h3>
                     <p>আধার কার্ডের ডেটার উপর ভিত্তি করে রেশন কার্ডের ভুল নাম ও বয়স অনলাইন সংশোধন করুন।</p>
@@ -188,7 +254,7 @@
                         কাস্টমারের অরিজিনাল আধার কার্ড এবং ভুল থাকা রেশন কার্ড।
                     </div>
                 </div>
-                <a href="https://wbpds.wb.gov.in/(S(3cicjibcfpesqcv3rllgm2bb))/Benificiary_Deatils_Update_by_Aadhaar.aspx" target="_blank" class="btn">সংশোধন করুন / Apply Now</a>
+                <a href="https://wbpds.wb.gov.in/(S(3cicjibcfpesqcv3rllgm2bb))/Benificiary_Deatils_Update_by_Aadhaar.aspx" target="_blank" class="btn">سংশোধন করুন / Apply Now</a>
             </div>
             <div class="card">
                 <div>
@@ -202,7 +268,9 @@
                 </div>
                 <a href="https://wbpds.gov.in/rcms/(S(drx4sghsulhga4a3gssmqbb1))/Family_Split_by_Aadhaar" target="_blank" class="btn">আলাদা করুন / Apply Now</a>
             </div>
-            <div class="card">
+            
+            <!-- ANNAPURNA HIGHLIGHT 1 (RATION) -->
+            <div class="card highlight-annapurna">
                 <div>
                     <span class="badge bg-food">Food Welfare</span>
                     <h3>অন্নপূর্ণা যোজনা <span>Annapurna Yojana & Social Security</span></h3>
@@ -214,6 +282,7 @@
                 </div>
                 <a href="https://socialsecurity.wb.gov.in/" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
             </div>
+            
             <div class="card">
                 <div>
                     <span class="badge bg-food">Agriculture</span>
@@ -272,14 +341,14 @@
             <div class="card">
                 <div>
                     <span class="badge bg-voter">Archive</span>
-                    <h3>ভোটার তালিকা আর্কাইভ <span>Voter Roll Archive (CEO WB)</span></h3>
-                    <p>পশ্চিমবঙ্গ নির্বাচনী দপ্তরের অফিশিয়াল আর্কাইভ ও পুরনো ভোটার তালিকার ডাটাবেস অনুসন্ধান।</p>
+                    <h3>২০০২ সালের ভোটার তালিকা <span>2002 Electoral Roll Download</span></h3>
+                    <p>পশ্চিমবঙ্গের ২০০২ সালের অফিসিয়াল ভোটার তালিকা (Electoral Roll) জেলা, বিধানসভা কেন্দ্র এবং বুথ অনুযায়ী অনুসন্ধান ও PDF ডাউনলোড করুন。</p>
                     <div class="info-box">
-                        <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
-                        নির্দিষ্ট নির্বাচনী বছর এবং পার্ট/বুথ বিবরণ।
+                        <strong>প্রয়োজনীয় তথ্য</strong><br>
+                        জেলা (District), বিধানসভা কেন্দ্র (Assembly Constituency), এবং বুথ/পার্ট নম্বর নির্বাচন করুন।
                     </div>
                 </div>
-                <a href="https://ceowestbengal.wb.gov.in/roll_dist" target="_blank" class="btn">আর্কাইভ দেখুন / Apply Now</a>
+                <a href="https://ceowestbengal.wb.gov.in/roll_dist" target="_blank" class="btn">২০০২ ভোটার তালিকা ডাউনলোড</a>
             </div>
         </div>
     </div>
@@ -327,7 +396,7 @@
             <div class="card">
                 <div>
                     <span class="badge bg-edu">Rupashree</span>
-                    <h3>রূপশ্রী স্ট্যাটাস ট্র্যাকিং <span>Rupashree Prakalpa Status Check</span></h3>
+                    <h3>रूपश्री স্ট্যাটাস ট্র্যাকিং <span>Rupashree Prakalpa Status Check</span></h3>
                     <p>দরিদ্র পরিবারের প্রাপ্তবয়স্ক মেয়েদের বিয়ের জন্য এককালীন ২৫,০০০ টাকার সরকারি অনুদানের স্ট্যাটাস অনুসন্ধান।</p>
                     <div class="info-box">
                         <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
@@ -343,23 +412,40 @@
     <div class="section-wrapper" id="welfare-utility">
         <div class="section-title">আবাসন, বিদ্যুৎ ও সমাজকল্যাণ / Welfare, Utility & Housing</div>
         <div class="unified-grid">
-            <div class="card">
+            
+            <!-- ANNAPURNA HIGHLIGHT 2 (WELFARE) -->
+            <div class="card highlight-annapurna">
                 <div>
                     <span class="badge bg-welfare">Welfare</span>
-                    <h3>লক্ষ্মীর ভাণ্ডার প্রকল্প <span>Lakshmir Bhandar Status & Apply</span></h3>
-                    <p>পশ্চিমবঙ্গ সরকারের বিশেষ সামাজিক সহায়তা প্রকল্প যার মাধ্যমে মহিলাদের প্রতি মাসে নির্ভরযোগ্য ব্যাংকিং সহায়তা প্রদান করা হয়।</p>
+                    <h3>অন্নপূর্ণা যোজনা <span>Annapurna Yojana Status & Apply</span></h3>
+                    <p>পশ্চিমবঙ্গ সরকারের অন্নপূর্ণা যোজনা প্রকল্পের মাধ্যমে যোগ্য মহিলাদের প্রতি মাসে সরাসরি ব্যাংক অ্যাকাউন্টে আর্থিক সহায়তা (DBT) প্রদান করা হয়। আবেদন, স্ট্যাটাস চেক এবং অন্যান্য পরিষেবা এখান থেকে করা যাবে।</p>
                     <div class="info-box">
-                        <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
-                        স্বাস্থ্য সাথী কার্ড, আধার কার্ড, কাস্ট সার্টিফিকেট এবং ব্যাংক অ্যাকাউন্ট বিবরণ।
+                        <strong>প্রয়োজনীয় ডকুমেন্ট</strong><br>
+                        আধার কার্ড, মোবাইল নম্বর, ব্যাংক অ্যাকাউন্ট (আধারের সাথে লিঙ্ক), ভোটার কার্ড/বাসিন্দার প্রমাণপত্র এবং প্রয়োজনীয় অন্যান্য নথি।
                     </div>
                 </div>
-                <a href="https://socialsecurity.wb.gov.in/" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
+                <a href="https://socialsecurity.wb.gov.in/" target="_blank" class="btn">আবেদন করুন / Check Status</a>
             </div>
+
+            <!-- NEW SOLAR ADDITION -->
+            <div class="card">
+                <div>
+                    <span class="badge bg-welfare">Solar Scheme</span>
+                    <h3>পিএম সূর্য ঘর যোজনা <span>PM Surya Ghar Muft Bijli Yojana</span></h3>
+                    <p>বাড়ির ছাদে সোলার প্যানেল বসানোর জাতীয় স্কিম। প্রতি মাসে ৩০০ ইউনিট পর্যন্ত ফ্রি বিদ্যুৎ এবং সর্বোচ্চ ৭৮,০০০ টাকা পর্যন্ত সরকারি ভরতুকি ও ব্যাংক লোণ সুবিধা।</p>
+                    <div class="info-box">
+                        <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
+                        লেটেস্ট ইলেকট্রিক বিল, আধার কার্ড, সচল মোবাইল নম্বর এবং ছাদের মালিকানার বিবরণ।
+                    </div>
+                </div>
+                <a href="https://consumer.pmsuryaghar.gov.in/consumer/" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
+            </div>
+            
             <div class="card">
                 <div>
                     <span class="badge bg-welfare">Farmer</span>
                     <h3>কৃষক বন্ধু নতুন রেজিস্ট্রেশন <span>Krishak Bandhu Sign Up & Apply</span></h3>
-                    <p>পশ্চিমবঙ্গ সরকারের कृषि বিভাগের আর্থিক অনুদান প্রকল্পের আওতায় নতুন চাষীদের নাম নথিভুক্তকরণ পোর্টাল।</p>
+                    <p>পশ্চিমবঙ্গ সরকারের কৃষি বিভাগের আর্থিক অনুদান প্রকল্পের আওতায় নতুন চাষীদের নাম নথিভুক্তকরণ পোর্টাল।</p>
                     <div class="info-box">
                         <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
                         জমির পর্চা/দলিল copy, ভোটার কার্ড, আধার কার্ড এবং ব্যাংক পাসবই।
@@ -395,13 +481,13 @@
                 <div>
                     <span class="badge bg-welfare">PMAY Home</span>
                     <h3>আবাস যোজনা ড্যাশবোর্ড <span>PMAY Main Survey Portal</span></h3>
-                    <p>PMAY কেন্দ্রীয় ডাটাবেস থেকে পাকা বাড়ির উপভোক্তাদের নামের তালিকা ও সার্ভে স্ট্যাটাস চেক।</p>
+                    <p>PMAY केंद्रीय ডাটাবেস থেকে পাকা বাড়ির উপভোক্তাদের নামের তালিকা ও সার্ভে স্ট্যাটাস চেক।</p>
                     <div class="info-box">
                         <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
                         আবেদনকারীর আধার নম্বর অথবা কাস্টমারের ফ্যামিলি আইডি।
                     </div>
                 </div>
-                <a href="https://pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx" target="_blank" class="btn">পোর্টাল খুলুন / Apply Now</a>
+                <a href="https://pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx" target="_blank" class="btn">портাল খুলুন / Apply Now</a>
             </div>
             <div class="card">
                 <div>
@@ -422,7 +508,7 @@
                     <p>অনলাইনে যেকোনো ইলেকট্রিক বিল চেক, পেমেন্ট এবং অফিশিয়াল বিদ্যুৎ পেমেন্ট রসিদ ডাউনলোড।</p>
                     <div class="info-box">
                         <strong>প্রয়োজনীয় ডকুমেন্ট</strong>
-                        ৯ ডিজিটের কনজিউমার আইডি (Consumer ID) এবং মোবাইল নম্বর।
+                        9 ডিজিটের কনজিউমার আইডি (Consumer ID) এবং মোবাইল নম্বর।
                     </div>
                 </div>
                 <a href="https://portal.wbsedcl.in/onlinepay/OnlineBillPay.jsp" target="_blank" class="btn">বিল জমা দিন / Apply Now</a>
@@ -492,7 +578,7 @@
                         আধার কার্ড, বংশ তালিকা বংশগত প্রমাণপত্র, এবং লোকাল পঞ্চায়েত ইনকাম সার্টিফিকেট।
                     </div>
                 </div>
-                <a href="https://castereificatewb.gov.in" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
+                <a href="https://castcertificatewb.gov.in" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
             </div>
             <div class="card">
                 <div>
@@ -504,7 +590,7 @@
                         হাসপাতালের রসিদ/ডিসচার্জ কাগজ অথবা পঞ্চায়েত অনুমতি পত্র এবং আবেদনকারীর আইডি।
                     </div>
                 </div>
-                <a href="https://janmamrityutathya.wb.gov.in/" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
+                <a href="https://janma-mrityutathya.wb.gov.in/" target="_blank" class="btn">আবেদন করুন / Apply Now</a>
             </div>
             <div class="card">
                 <div>
