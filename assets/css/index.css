@@ -37,6 +37,10 @@ body {
     }
 }
 
+#services .premium-card {
+    text-align: center;
+}
+
 /* --- CREATIVE INTERACTIVE EFFECTS --- */
 .premium-card {
     background: var(--color-bg-card);
@@ -506,6 +510,9 @@ body {
     .hero-specialty { font-size: 24px; }
     .timeline-header-meta { flex-direction: column; gap: 8px; }
     .premium-card { padding: 30px; }
+    .hero-container{
+        padding-top: 0;
+    }
 }
 
 /* Structural Optimization for Isotope Filter Transitions */
@@ -523,4 +530,10 @@ body {
 }
 .index-page .text-muted{
     color: #e6e1e1 !important;
+}
+
+#developer-ecosystem .premium-card a{
+    text-decoration: none;
+    color: var(--text-main);
+    cursor: pointer;
 }
