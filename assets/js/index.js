@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const navbarCollapse = document.getElementById('navbarResponsiveSystem');
+    if (navbarCollapse) {
+        navbarCollapse.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992) {
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+    }
       
     if (typeof AOS !== 'undefined') {
         AOS.init({ duration: 700, easing: 'ease-out', once: true });
