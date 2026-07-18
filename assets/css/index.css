@@ -31,6 +31,19 @@ body, p, body .text-muted{
     color: #d9cdcd !important;
 }
 
+.btn-primary-hire{
+    background: linear-gradient(135deg, var(--color-primary), #ff4f74);
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 1, 79, 0.4);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
 /* --- CREATIVE EXPERT CURSOR LAYER --- */
 @media (min-width: 992px) {
     #expert-canvas-cursor {
